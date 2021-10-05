@@ -1,0 +1,692 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 21,
+    "passes": 9,
+    "pending": 0,
+    "failures": 12,
+    "start": "2021-10-04T08:06:27.499Z",
+    "end": "2021-10-04T08:06:29.678Z",
+    "duration": 2179,
+    "testsRegistered": 21,
+    "passPercent": 42.857142857142854,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b34bdfd9-7635-4cd6-b6e8-8ea0c2b978c0",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9fa2f2bc-8412-4122-bccb-fad33b2a2b5a",
+          "title": "User Posts",
+          "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\posts.js",
+          "file": "\\test\\posts.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"User Posts\"",
+              "fullTitle": "User Posts \"before all\" hook in \"User Posts\"",
+              "timedOut": false,
+              "duration": 92,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "b21cb35a-ba22-4355-b36b-3d28db75926b",
+              "parentUUID": "9fa2f2bc-8412-4122-bccb-fad33b2a2b5a",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "/posts",
+              "fullTitle": "User Posts /posts",
+              "timedOut": false,
+              "duration": 97,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {
+                "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'user_id'",
+                "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'user_id'\n    at _callee2$ (test\\/posts.js:29:43)\n    at tryCatch (node_modules\\regenerator-runtime\\runtime.js:63:40)\n    at Generator.invoke [as _invoke] (node_modules\\regenerator-runtime\\runtime.js:294:22)\n    at Generator.next (node_modules\\regenerator-runtime\\runtime.js:119:21)\n    at asyncGeneratorStep (node_modules\\@babel\\runtime\\helpers\\asyncToGenerator.js:3:24)\n    at _next (node_modules\\@babel\\runtime\\helpers\\asyncToGenerator.js:25:9)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "7821f950-5b51-40a9-bd2c-4410bd2f1dac",
+              "parentUUID": "9fa2f2bc-8412-4122-bccb-fad33b2a2b5a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET/posts/:id",
+              "fullTitle": "User Posts GET/posts/:id",
+              "timedOut": false,
+              "duration": 61,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+              "err": {},
+              "uuid": "df0dfe58-543f-49ee-a0ba-7e4cb71974c7",
+              "parentUUID": "9fa2f2bc-8412-4122-bccb-fad33b2a2b5a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "cfe250b8-15a2-4da4-aa15-22583edc10b9",
+              "title": "Nagative Tests",
+              "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\posts.js",
+              "file": "\\test\\posts.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "401 Authentication Failed",
+                  "fullTitle": "User Posts Nagative Tests 401 Authentication Failed",
+                  "timedOut": false,
+                  "duration": 98,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {},
+                  "uuid": "d1bfcd2a-fb61-4ac2-b5db-405f079bd19d",
+                  "parentUUID": "cfe250b8-15a2-4da4-aa15-22583edc10b9",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "422 Validation Failed",
+                  "fullTitle": "User Posts Nagative Tests 422 Validation Failed",
+                  "timedOut": false,
+                  "duration": 103,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var self = this,\n    args = arguments;\nreturn new Promise(function (resolve, reject) {\n  var gen = fn.apply(self, args);\n  function _next(value) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"next\", value);\n  }\n  function _throw(err) {\n    asyncGeneratorStep(gen, resolve, reject, _next, _throw, \"throw\", err);\n  }\n  _next(undefined);\n});",
+                  "err": {
+                    "message": "AssertionError: expected 401 to equal 422",
+                    "estack": "AssertionError: expected 401 to equal 422\n    at _callee5$ (test\\/posts.js:63:36)\n    at tryCatch (node_modules\\regenerator-runtime\\runtime.js:63:40)\n    at Generator.invoke [as _invoke] (node_modules\\regenerator-runtime\\runtime.js:294:22)\n    at Generator.next (node_modules\\regenerator-runtime\\runtime.js:119:21)\n    at asyncGeneratorStep (node_modules\\@babel\\runtime\\helpers\\asyncToGenerator.js:3:24)\n    at _next (node_modules\\@babel\\runtime\\helpers\\asyncToGenerator.js:25:9)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                    "diff": "- 401\n+ 422\n"
+                  },
+                  "uuid": "1b81b108-18c6-4027-bf20-8ea823eacb41",
+                  "parentUUID": "cfe250b8-15a2-4da4-aa15-22583edc10b9",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "d1bfcd2a-fb61-4ac2-b5db-405f079bd19d"
+              ],
+              "failures": [
+                "1b81b108-18c6-4027-bf20-8ea823eacb41"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 201,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            }
+          ],
+          "passes": [
+            "df0dfe58-543f-49ee-a0ba-7e4cb71974c7"
+          ],
+          "failures": [
+            "7821f950-5b51-40a9-bd2c-4410bd2f1dac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 158,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        },
+        {
+          "uuid": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+          "title": "Users",
+          "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\users.js",
+          "file": "\\test\\users.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "GET/users",
+              "fullTitle": "Users GET/users",
+              "timedOut": false,
+              "duration": 94,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// request.get(`users?access-token=${TOKEN}`).end((err,res)=>{\n//     expect(res.body.data).to.not.be.empty;\n//     done();\n// });\nreturn _common[\"default\"].get(\"users?access-token=\".concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.not.be.empty;\n});",
+              "err": {},
+              "uuid": "24641d03-b482-4753-83f2-c04b849128d5",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /users/:id",
+              "fullTitle": "Users GET /users/:id",
+              "timedOut": false,
+              "duration": 91,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "return _common[\"default\"].get(\"users/1?access-token=\".concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data.id).to.be.eq(1);\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 1",
+                "estack": "AssertionError: expected undefined to equal 1\n    at C:\\Users\\GWL\\Api-tests\\test\\/users.js:22:38\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "9b2f74ab-54e5-4e71-a8f6-8f915c178213",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /users with query params",
+              "fullTitle": "Users GET /users with query params",
+              "timedOut": false,
+              "duration": 88,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var url = \"users?access-token=\".concat(TOKEN, \"&page=5&gender=female&status=active\");\nreturn _common[\"default\"].get(url).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.not.be.empty;\n  res.body.data.forEach(function (data) {\n    (0, _chai.expect)(data.gender).to.eq(\"female\");\n    (0, _chai.expect)(data.status).to.eq(\"active\");\n  });\n});",
+              "err": {},
+              "uuid": "873eda7d-c078-45c5-9a4a-6d605198fd2a",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "GET /users with query params with pagination",
+              "fullTitle": "Users GET /users with query params with pagination",
+              "timedOut": false,
+              "duration": 96,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var url = \"users?access-token=\".concat(TOKEN, \"&page=5&gender=female&status=active\");\nreturn _common[\"default\"].get(url).then(function (res) {\n  (0, _chai.expect)(res.body.meta.pagination).to.not.be.empty;\n  (0, _chai.expect)(res.body.meta.pagination.page).to.eq(5);\n});",
+              "err": {},
+              "uuid": "6eca71fb-f86b-45f4-b78f-f150dda642ba",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST /users",
+              "fullTitle": "Users POST /users",
+              "timedOut": false,
+              "duration": 93,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var data = {\n  email: \"wekaretest-\".concat(Math.floor(Math.random() * 555), \"@mail.ca\"),\n  name: \"wekare\",\n  gender: \"male\",\n  status: \"inactive\"\n};\nreturn _common[\"default\"].post(\"users\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  console.log(res.body);\n  (0, _chai.expect)(res.body.data.email).to.eq(data.email);\n  (0, _chai.expect)(res.body.data.status).to.eq(data.status);\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'wekaretest-527@mail.ca'",
+                "estack": "AssertionError: expected undefined to equal 'wekaretest-527@mail.ca'\n    at C:\\Users\\GWL\\Api-tests\\test\\/users.js:55:40\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "ebd6c8fd-22b1-4c2c-b248-014850ef5c5f",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST /users",
+              "fullTitle": "Users POST /users",
+              "timedOut": false,
+              "duration": 97,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var data = {\n  email: \"wekaretest-\".concat(Math.floor(Math.random() * 555), \"@mail.ca\"),\n  name: \"wekare\",\n  gender: \"male\",\n  status: \"inactive\"\n};\nreturn _common[\"default\"].post(\"users\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
+              "err": {
+                "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'",
+                "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'\n    at C:\\Users\\GWL\\Api-tests\\test\\/users.js:71:39\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "529a0986-18b9-4991-9662-f710e28326f2",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "PUT /users/ :id",
+              "fullTitle": "Users PUT /users/ :id",
+              "timedOut": false,
+              "duration": 96,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var data = {\n  status: \"active\",\n  name: \"wekare -\".concat(Math.floor(Math.random() * 555))\n};\nreturn _common[\"default\"].put(\"users/1360\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  console.log(res.body.data);\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
+              "err": {
+                "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'status'",
+                "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'status'\n    at C:\\Users\\GWL\\Api-tests\\test\\/users.js:85:39\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "fc27ac0b-3b02-48fa-a3ce-5fa6007fe6fe",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "DELETE /users/ :id",
+              "fullTitle": "Users DELETE /users/ :id",
+              "timedOut": false,
+              "duration": 92,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "return _common[\"default\"][\"delete\"](\"users/17\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.be.eq(null);\n});",
+              "err": {
+                "message": "AssertionError: expected { message: 'Authentication failed' } to equal null",
+                "estack": "AssertionError: expected { message: 'Authentication failed' } to equal null\n    at C:\\Users\\GWL\\Api-tests\\test\\/users.js:93:37\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "bcc1fd44-c0fe-4d85-8830-2dd0f5ada90b",
+              "parentUUID": "95b1646a-fd41-485a-8a7d-9403899dbf37",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "24641d03-b482-4753-83f2-c04b849128d5",
+            "873eda7d-c078-45c5-9a4a-6d605198fd2a",
+            "6eca71fb-f86b-45f4-b78f-f150dda642ba"
+          ],
+          "failures": [
+            "9b2f74ab-54e5-4e71-a8f6-8f915c178213",
+            "ebd6c8fd-22b1-4c2c-b248-014850ef5c5f",
+            "529a0986-18b9-4991-9662-f710e28326f2",
+            "fc27ac0b-3b02-48fa-a3ce-5fa6007fe6fe",
+            "bcc1fd44-c0fe-4d85-8830-2dd0f5ada90b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 747,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        },
+        {
+          "uuid": "b91bcd3c-6d39-4dbf-8f8f-5a77acdf915c",
+          "title": "Users",
+          "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\usersAdvance.js",
+          "file": "\\test\\usersAdvance.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "POST /users",
+              "fullTitle": "Users POST /users",
+              "timedOut": false,
+              "duration": 97,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var data = {\n  email: \"wekaretest-\".concat(Math.floor(Math.random() * 555), \"@mail.ca\"),\n  name: \"wekare\",\n  gender: \"male\",\n  status: \"inactive\"\n};\nreturn _common[\"default\"].post(\"users\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  console.log(res.body);\n  (0, _chai.expect)(res.body.data.email).to.eq(data.email);\n  (0, _chai.expect)(res.body.data.status).to.eq(data.status);\n});",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 'wekaretest-338@mail.ca'",
+                "estack": "AssertionError: expected undefined to equal 'wekaretest-338@mail.ca'\n    at C:\\Users\\GWL\\Api-tests\\test\\/usersAdvance.js:73:40\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "342ff1a2-bf84-4cde-9ab0-0469f39a2221",
+              "parentUUID": "b91bcd3c-6d39-4dbf-8f8f-5a77acdf915c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "POST /users",
+              "fullTitle": "Users POST /users",
+              "timedOut": false,
+              "duration": 80,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "var data = {\n  email: \"wekaretest-\".concat(Math.floor(Math.random() * 555), \"@mail.ca\"),\n  name: \"wekare\",\n  gender: \"male\",\n  status: \"inactive\"\n};\nreturn _common[\"default\"].post(\"users\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
+              "err": {
+                "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'",
+                "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'\n    at C:\\Users\\GWL\\Api-tests\\test\\/usersAdvance.js:89:39\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                "diff": null
+              },
+              "uuid": "e391d7f7-2bee-4aff-a398-3eaa07e6033c",
+              "parentUUID": "b91bcd3c-6d39-4dbf-8f8f-5a77acdf915c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [
+            {
+              "uuid": "89b5af0f-3b60-4214-a9a0-7e0696bcd600",
+              "title": "POST",
+              "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\usersAdvance.js",
+              "file": "\\test\\usersAdvance.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "/users",
+                  "fullTitle": "Users POST /users",
+                  "timedOut": false,
+                  "duration": 99,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var data = {\n  email: \"wekaretest-\".concat(Math.floor(Math.random() * 555), \"@mail.com\"),\n  name: \"wekare\",\n  gender: \"male\",\n  status: \"inactive\"\n};\nreturn _common[\"default\"].post(\"users\").set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n  userId = res.body.data.id;\n  console.log(userId);\n});",
+                  "err": {
+                    "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'",
+                    "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'email'\n    at C:\\Users\\GWL\\Api-tests\\test\\/usersAdvance.js:23:41\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                    "diff": null
+                  },
+                  "uuid": "ef01deb4-faa6-4eea-be90-c0346f56570c",
+                  "parentUUID": "89b5af0f-3b60-4214-a9a0-7e0696bcd600",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "ef01deb4-faa6-4eea-be90-c0346f56570c"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 99,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            },
+            {
+              "uuid": "fe99d858-83b9-4396-b1f5-ef47e8189d63",
+              "title": "GET",
+              "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\usersAdvance.js",
+              "file": "\\test\\usersAdvance.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "/users",
+                  "fullTitle": "Users GET /users",
+                  "timedOut": false,
+                  "duration": 99,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "return _common[\"default\"].get(\"users?access-token=\".concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.not.be.empty;\n});",
+                  "err": {},
+                  "uuid": "8ce17c45-e285-4f9c-8bca-b019d33f4854",
+                  "parentUUID": "fe99d858-83b9-4396-b1f5-ef47e8189d63",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "/users/:id",
+                  "fullTitle": "Users GET /users/:id",
+                  "timedOut": false,
+                  "duration": 92,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "return _common[\"default\"].get(\"users/\".concat(userId, \"?access-token=\").concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data.id).to.be.eq(userId);\n});",
+                  "err": {},
+                  "uuid": "dd3553ad-0bb7-4ef3-8e42-ffe7a78164c4",
+                  "parentUUID": "fe99d858-83b9-4396-b1f5-ef47e8189d63",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": " /users with query params",
+                  "fullTitle": "Users GET  /users with query params",
+                  "timedOut": false,
+                  "duration": 101,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var url = \"users?access-token=\".concat(TOKEN, \"&page=5&gender=female&status=active\");\nreturn _common[\"default\"].get(url).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.not.be.empty;\n  res.body.data.forEach(function (data) {\n    (0, _chai.expect)(data.gender).to.eq(\"female\");\n    (0, _chai.expect)(data.status).to.eq(\"active\");\n  });\n});",
+                  "err": {},
+                  "uuid": "1d8960d3-6c24-4b9c-a359-a84f12bb053d",
+                  "parentUUID": "fe99d858-83b9-4396-b1f5-ef47e8189d63",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": " /users with query params with pagination",
+                  "fullTitle": "Users GET  /users with query params with pagination",
+                  "timedOut": false,
+                  "duration": 99,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "var url = \"users?access-token=\".concat(TOKEN, \"&page=5&gender=female&status=active\");\nreturn _common[\"default\"].get(url).then(function (res) {\n  (0, _chai.expect)(res.body.meta.pagination).to.not.be.empty;\n  (0, _chai.expect)(res.body.meta.pagination.page).to.eq(5);\n});",
+                  "err": {},
+                  "uuid": "4914bcf5-9dae-4065-8dfd-102865d56f61",
+                  "parentUUID": "fe99d858-83b9-4396-b1f5-ef47e8189d63",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "8ce17c45-e285-4f9c-8bca-b019d33f4854",
+                "dd3553ad-0bb7-4ef3-8e42-ffe7a78164c4",
+                "1d8960d3-6c24-4b9c-a359-a84f12bb053d",
+                "4914bcf5-9dae-4065-8dfd-102865d56f61"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 391,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            },
+            {
+              "uuid": "7baf0bff-1972-40f6-9ba5-6d28a9e65aad",
+              "title": "PUT",
+              "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\usersAdvance.js",
+              "file": "\\test\\usersAdvance.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "PUT /users/ :id",
+                  "fullTitle": "Users PUT PUT /users/ :id",
+                  "timedOut": false,
+                  "duration": 90,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "var data = {\n  status: \"active\",\n  name: \"wekare -\".concat(Math.floor(Math.random() * 555))\n};\nreturn _common[\"default\"].put(\"users/\".concat(userId)).set(\"Authorization\", \"Bearer \".concat(TOKEN)).send(data).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.deep.include(data);\n});",
+                  "err": {
+                    "message": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'status'",
+                    "estack": "AssertionError: expected { message: 'Authentication failed' } to have deep property 'status'\n    at C:\\Users\\GWL\\Api-tests\\test\\/usersAdvance.js:103:41\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                    "diff": null
+                  },
+                  "uuid": "cb244df6-7c48-4840-931a-f20f4d65ef1d",
+                  "parentUUID": "7baf0bff-1972-40f6-9ba5-6d28a9e65aad",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "cb244df6-7c48-4840-931a-f20f4d65ef1d"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 90,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            },
+            {
+              "uuid": "2d392df4-7217-427a-b845-84ef7e49a207",
+              "title": "DELETE",
+              "fullFile": "C:\\Users\\GWL\\Api-tests\\test\\usersAdvance.js",
+              "file": "\\test\\usersAdvance.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "DELETE /users/ :id",
+                  "fullTitle": "Users DELETE DELETE /users/ :id",
+                  "timedOut": false,
+                  "duration": 95,
+                  "state": "failed",
+                  "speed": null,
+                  "pass": false,
+                  "fail": true,
+                  "pending": false,
+                  "context": null,
+                  "code": "return _common[\"default\"][\"delete\"](\"users/\".concat(userId)).set(\"Authorization\", \"Bearer \".concat(TOKEN)).then(function (res) {\n  (0, _chai.expect)(res.body.data).to.be.eq(null);\n});",
+                  "err": {
+                    "message": "AssertionError: expected { message: 'Authentication failed' } to equal null",
+                    "estack": "AssertionError: expected { message: 'Authentication failed' } to equal null\n    at C:\\Users\\GWL\\Api-tests\\test\\/usersAdvance.js:113:39\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)",
+                    "diff": null
+                  },
+                  "uuid": "78b39b64-cc1a-4f3b-acbf-977c34521b5c",
+                  "parentUUID": "2d392df4-7217-427a-b845-84ef7e49a207",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [],
+              "failures": [
+                "78b39b64-cc1a-4f3b-acbf-977c34521b5c"
+              ],
+              "pending": [],
+              "skipped": [],
+              "duration": 95,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 5000
+            }
+          ],
+          "passes": [],
+          "failures": [
+            "342ff1a2-bf84-4cde-9ab0-0469f39a2221",
+            "e391d7f7-2bee-4aff-a398-3eaa07e6033c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 177,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 5000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 5000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "9.1.2"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.3.0"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.2.0"
+    }
+  }
+}
