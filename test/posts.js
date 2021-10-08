@@ -28,7 +28,6 @@ describe("User Posts", () => {
           console.log(data);
         expect(postRes.body.data).to.deep.include(data);
         postId = postRes.body.data.id;
-    
   });
 
   it('GET/posts/:id', async () => {
